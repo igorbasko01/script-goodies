@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Rename the file to pre-push, and put it under .git/hooks/
+
+flutter test
+result=$?
+
+if [ $result -ne 0 ]; then
+  echo "Tests failed, aborting push."
+  exit 1
+fi
+
+exit 0
