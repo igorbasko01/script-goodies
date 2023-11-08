@@ -34,6 +34,8 @@ function git-delete-safe() {
 }
 
 alias gitbds='git-delete-safe'
+alias gitbn='git checkout -b'
 alias gits='git status'
-alias gitc='git commit'
+alias gitc='git commit -m'
 alias gita='git add'
+alias gitpoh='git push origin head'
